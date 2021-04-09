@@ -56,3 +56,7 @@ function myfun(){
       console.log("err",err)
   })
 }
+
+
+
+catch()
