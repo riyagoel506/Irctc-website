@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="train.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
-<body onload="myfun()">
+<body>
     <div class="header">
         <div class="margin-div">
             <img class="logo" src="secondry-logo.png"></img>
@@ -39,8 +40,8 @@
                 <h1>BOOK TICKET</h1>
                 <div class="row-1">
                     <i class="fa fa-location-arrow" aria-hidden="true"></i>
-                    
-                    <select name="From" style="-webkit-appearance: none;" id="from" >
+
+                    <select name="From" style="-webkit-appearance: none;" id="from">
                         <option value="">From</option>
                         <option value="Andhra Pradesh">Andhra Pradesh</option>
                         <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
@@ -63,10 +64,10 @@
                         <option value="Karnataka">Karnataka</option>
                         <option value="Kerala">Kerala</option>
                         <option value="Madhya Pradesh">Madhya Pradesh</option>
-                        <option value="AC Chair car(CC) ">AC Chair car(CC)</option>
+
                     </select>
                     <i class="fa fa-calendar" aria-hidden="  true"></i>
-                    <input type="date" name="name" id="date" placeholder="  Date">
+                    <input type="date" name="name" id="date" min="2021-04-14">
 
                 </div>
 
@@ -74,7 +75,8 @@
 
                 <div class="row-2">
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <select name="To" style="-webkit-appearance: none;" id="to" >
+                    <select name="To" style="-webkit-appearance: none;" id="to">
+
                         <option value="">Choose State</option>
                         <option value="Andhra Pradesh">Andhra Pradesh</option>
                         <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
@@ -97,7 +99,7 @@
                         <option value="Karnataka">Karnataka</option>
                         <option value="Kerala">Kerala</option>
                         <option value="Madhya Pradesh">Madhya Pradesh</option>
-                        <option value="AC Chair car(CC) ">AC Chair car(CC)</option>
+
                     </select>
                     <div class="briefcase">
                         <i class="fa fa-briefcase" aria-hidden="true"></i>
@@ -127,7 +129,7 @@
                 <div class="row-4">
                     <input type="checkbox" name="name" id="c1"> Divyaang Concession </input>
 
-                    <input type="checkbox" name="name"  id="c2" > Flexible with data</input>
+                    <input type="checkbox" name="name" id="c2"> Flexible with data</input>
                 </div>
                 <div class="row-5">
                     <input type="checkbox" name="name" id="c3"> Train with Available Berth</input>
